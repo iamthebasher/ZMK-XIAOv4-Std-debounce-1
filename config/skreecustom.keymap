@@ -28,37 +28,49 @@
 
         layer_1 {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7  &kp F8             &kp F9           &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans           &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans             &trans           &trans   &trans   &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &kp F6      &kp F7             &kp F8           &kp F9  &kp F10  &kp F11
+&trans   &trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans           &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans           &trans  &trans   &trans
 
-                        &trans  &trans  &trans    &trans  &trans             &trans
-                        &trans  &trans  &trans    &trans  &trans             &trans
+                         &trans  &trans  &trans    &trans      &trans             &trans
+                         &trans  &trans  &trans    &trans      &tog 3             &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &kp END  &trans    &kp HOME     &trans    &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans  &trans  &trans  &trans  &trans   &trans    &trans       &trans    &trans        &trans            &trans             &trans
-&trans  &trans  &trans  &trans  &trans   &trans    &kp LEFT     &kp DOWN  &kp UP_ARROW  &kp RIGHT         &trans             &trans
-&trans  &trans  &trans  &trans  &trans   &trans    &trans       &trans    &trans        &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &kp END  &trans    &kp HOME  &trans    &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans  &trans  &trans  &trans   &trans    &trans    &trans    &trans        &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &trans   &trans    &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT         &trans             &trans
+&trans  &trans  &trans  &trans  &trans   &trans    &trans    &trans    &trans        &trans            &trans             &trans
 
-                        &trans  &trans   &trans    &bootloader  &trans    &trans
-                        &trans  &trans   &trans    &mkp MB4     &trans    &mkp MB5
+                        &trans  &trans   &trans    &trans    &trans    &trans
+                        &trans  &tog 3   &trans    &mkp MB4  &trans    &mkp MB5
             >;
         };
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC  &kp N1            &kp N2  &kp N3     &kp N4     &kp N5      &trans      &trans             &trans           &trans  &trans  &trans
+&kp T    &kp TAB           &kp Q   &kp W      &kp E      &kp R       &trans      &trans             &trans           &trans  &trans  &trans
+&kp G    &kp LEFT_SHIFT    &kp A   &kp S      &kp D      &kp F       &kp K_MUTE  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans  &trans  &trans
+&kp B    &kp LEFT_CONTROL  &kp Z   &kp X      &kp C      &kp V       &trans      &trans             &trans           &trans  &trans  &trans
 
-                        &trans  &trans    &trans      &trans  &trans  &trans
-                        &trans  &mkp MB1  &mkp MB2    &trans  &trans  &trans
+                                   &mo 4      &kp SPACE  &kp LGUI    &trans      &trans             &trans
+                                   &kp LCTRL  &tog 0     &trans      &mkp MB4    &trans             &mkp MB5
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&kp ESC  &kp N6     &kp N7  &kp N8     &kp N9     &kp N0      &trans  &trans             &trans           &trans  &trans  &trans
+&kp T    &kp TAB    &kp Q   &kp W      &kp E      &kp R       &trans  &trans             &trans           &trans  &trans  &trans
+&kp G    &kp LSHFT  &kp A   &kp S      &kp D      &kp F       &trans  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &trans  &trans  &trans
+&kp B    &kp LCTRL  &kp Z   &kp X      &kp C      &kp V       &trans  &trans             &trans           &trans  &trans  &trans
+
+                            &trans     &kp SPACE  &kp LGUI    &trans  &trans             &trans
+                            &kp LCTRL  &trans     &trans      &trans  &trans             &trans
             >;
         };
     };
