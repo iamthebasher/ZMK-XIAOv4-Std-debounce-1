@@ -22,7 +22,7 @@
 &kp GRAVE           &kp Z           &kp X               &kp C             &kp V           &kp B       &kp N      &kp M            &kp COMMA          &kp DOT              &kp FSLH                 &kp BSLH
 
                                                         &kp LSHFT         &kp SPACE       &kp LGUI    &kp DEL    &kp RET          &kp BACKSPACE
-                                                        &kp LCTRL         &mo 1           &mo 4       &mkp LCLK  &mo 2            &mkp RCLK
+                                                        &kp LCTRL         &mo 1           &to 3       &mkp LCLK  &mo 2            &mkp RCLK
             >;
         };
 
@@ -34,7 +34,7 @@
 &trans   &trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans           &trans  &trans   &trans
 
                          &trans  &trans  &trans    &trans      &trans             &trans
-                         &trans  &trans  &trans    &trans      &to 3              &trans
+                         &trans  &trans  &trans    &trans      &trans             &trans
             >;
         };
 
@@ -46,7 +46,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans         &trans         &trans            &trans             &trans
 
                         &trans  &trans  &trans    &trans          &trans         &trans
-                        &trans  &to 3   &trans    &mkp MB4        &trans         &mkp MB5
+                        &trans  &trans  &trans    &mkp MB4        &trans         &mkp MB5
             >;
         };
 
@@ -58,7 +58,7 @@
 &kp B    &kp LEFT_CONTROL  &kp Z   &kp X      &kp C      &kp V       &trans      &trans             &trans           &trans  &trans  &trans
 
                                    &trans     &kp SPACE  &kp LGUI    &trans      &trans             &trans
-                                   &kp LCTRL  &to 0      &mo 4       &mkp MB4    &trans             &mkp MB5
+                                   &kp LCTRL  &mo 4      &to 0       &mkp MB4    &trans             &mkp MB5
             >;
         };
 
