@@ -34,7 +34,7 @@
 &trans   &trans  &trans  &trans  &trans  &trans    &trans      &trans             &trans           &trans  &trans   &trans
 
                          &trans  &trans  &trans    &trans      &trans             &trans
-                         &trans  &trans  &trans    &trans      &tog 3             &trans
+                         &trans  &trans  &trans    &trans      &to 3              &trans
             >;
         };
 
@@ -46,7 +46,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans         &trans         &trans            &trans             &trans
 
                         &trans  &trans  &trans    &trans          &trans         &trans
-                        &trans  &tog 3  &trans    &mkp MB4        &trans         &mkp MB5
+                        &trans  &to 3   &trans    &mkp MB4        &trans         &mkp MB5
             >;
         };
 
@@ -58,7 +58,7 @@
 &kp B    &kp LEFT_CONTROL  &kp Z   &kp X      &kp C      &kp V       &trans      &trans             &trans           &trans  &trans  &trans
 
                                    &trans     &kp SPACE  &kp LGUI    &trans      &trans             &trans
-                                   &kp LCTRL  &tog 3     &mo 4       &mkp MB4    &trans             &mkp MB5
+                                   &kp LCTRL  &to 0      &mo 4       &mkp MB4    &trans             &mkp MB5
             >;
         };
 
