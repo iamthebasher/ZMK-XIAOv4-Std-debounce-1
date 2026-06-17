@@ -18,6 +18,15 @@ if SHIELD_SKREECUSTOM_LEFT || SHIELD_SKREECUSTOM_RIGHT
 config ZMK_SLEEP
     default y
 
+# Indicators/RGB go dark after 10 min of inactivity (was 30s default)
+config ZMK_IDLE_TIMEOUT
+    default 600000
+
+# Deep sleep (the battery + "lost my layer" timeout) after 30 min.
+# Use 3600000 for 1 hour.
+config ZMK_IDLE_SLEEP_TIMEOUT
+    default 1800000
+
 config SPI
     default y
 
