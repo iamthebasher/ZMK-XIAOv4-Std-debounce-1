@@ -12,15 +12,23 @@
 
 / {
     behaviors {
-        // Home row mods. tap-preferred + require-prior-idle kills the
-        // mid-typing misfires (stray GUI/Shift/Alt). To use a mod you now
-        // hold the key past ~200ms deliberately.
+        // Home row mods, timing-only (no positional restriction, so same-hand
+        // mod+key combos still work).
+        //   balanced            -> a tap fully nested inside the hold counts as
+        //                          a mod no matter how fast; a roll (mod key
+        //                          released before the next key) stays a tap.
+        //   require-prior-idle  -> if you pressed any key < N ms ago, force a
+        //                          tap (you're mid-flow). Modern name for the
+        //                          old global-quick-tap. Lower = snappier mods.
+        //   tapping-term        -> mainly the held-alone timeout. 160-200 is the
+        //                          usual range; lower = faster holds, slightly
+        //                          more misfire-prone.
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            require-prior-idle-ms = <250>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            require-prior-idle-ms = <150>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
         };
